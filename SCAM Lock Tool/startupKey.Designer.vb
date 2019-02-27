@@ -47,7 +47,7 @@ Partial Class startupKey
         Me.cancelStartupBtn.Location = New System.Drawing.Point(166, 315)
         Me.cancelStartupBtn.Name = "cancelStartupBtn"
         Me.cancelStartupBtn.Size = New System.Drawing.Size(70, 24)
-        Me.cancelStartupBtn.TabIndex = 8
+        Me.cancelStartupBtn.TabIndex = 2
         Me.cancelStartupBtn.Text = "Cancel"
         Me.cancelStartupBtn.UseVisualStyleBackColor = True
         '
@@ -57,7 +57,7 @@ Partial Class startupKey
         Me.okStartupBtn.Location = New System.Drawing.Point(90, 315)
         Me.okStartupBtn.Name = "okStartupBtn"
         Me.okStartupBtn.Size = New System.Drawing.Size(70, 24)
-        Me.okStartupBtn.TabIndex = 7
+        Me.okStartupBtn.TabIndex = 3
         Me.okStartupBtn.Text = "OK"
         Me.okStartupBtn.UseVisualStyleBackColor = True
         '
@@ -71,7 +71,7 @@ Partial Class startupKey
         Me.sysPasswStartupBox.Location = New System.Drawing.Point(12, 161)
         Me.sysPasswStartupBox.Name = "sysPasswStartupBox"
         Me.sysPasswStartupBox.Size = New System.Drawing.Size(298, 132)
-        Me.sysPasswStartupBox.TabIndex = 1
+        Me.sysPasswStartupBox.TabIndex = 6
         Me.sysPasswStartupBox.TabStop = False
         '
         'sysPasswStartupSystemRadio
@@ -85,7 +85,7 @@ Partial Class startupKey
         Me.sysPasswStartupSystemRadio.Location = New System.Drawing.Point(25, 72)
         Me.sysPasswStartupSystemRadio.Name = "sysPasswStartupSystemRadio"
         Me.sysPasswStartupSystemRadio.Size = New System.Drawing.Size(253, 56)
-        Me.sysPasswStartupSystemRadio.TabIndex = 3
+        Me.sysPasswStartupSystemRadio.TabIndex = 9
         Me.sysPasswStartupSystemRadio.TabStop = True
         Me.sysPasswStartupSystemRadio.Text = "Store Startup Key Locally" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Stores a key as part of the operating system," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and no " &
     "interaction is required during system" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "start."
@@ -101,7 +101,7 @@ Partial Class startupKey
         Me.sysPasswStartupFloppyRadio.Location = New System.Drawing.Point(25, 23)
         Me.sysPasswStartupFloppyRadio.Name = "sysPasswStartupFloppyRadio"
         Me.sysPasswStartupFloppyRadio.Size = New System.Drawing.Size(251, 43)
-        Me.sysPasswStartupFloppyRadio.TabIndex = 2
+        Me.sysPasswStartupFloppyRadio.TabIndex = 8
         Me.sysPasswStartupFloppyRadio.Text = "Store Startup Key on Floppy Disk" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Requires a floppy disk to be inserted during" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "s" &
     "ystem start."
         Me.sysPasswStartupFloppyRadio.UseVisualStyleBackColor = True
@@ -114,7 +114,7 @@ Partial Class startupKey
         Me.sysPasswStartupRadio.Location = New System.Drawing.Point(6, 0)
         Me.sysPasswStartupRadio.Name = "sysPasswStartupRadio"
         Me.sysPasswStartupRadio.Size = New System.Drawing.Size(168, 17)
-        Me.sysPasswStartupRadio.TabIndex = 1
+        Me.sysPasswStartupRadio.TabIndex = 7
         Me.sysPasswStartupRadio.Text = "System Generated Password"
         Me.sysPasswStartupRadio.UseVisualStyleBackColor = True
         '
@@ -130,7 +130,7 @@ Partial Class startupKey
         Me.passwStartupBox.Location = New System.Drawing.Point(12, 12)
         Me.passwStartupBox.Name = "passwStartupBox"
         Me.passwStartupBox.Size = New System.Drawing.Size(298, 132)
-        Me.passwStartupBox.TabIndex = 0
+        Me.passwStartupBox.TabIndex = 5
         Me.passwStartupBox.TabStop = False
         '
         'passwStartupConfirmLabel
@@ -150,7 +150,7 @@ Partial Class startupKey
         Me.passwStartupConfirmTextBox.Name = "passwStartupConfirmTextBox"
         Me.passwStartupConfirmTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.passwStartupConfirmTextBox.Size = New System.Drawing.Size(205, 22)
-        Me.passwStartupConfirmTextBox.TabIndex = 6
+        Me.passwStartupConfirmTextBox.TabIndex = 1
         Me.passwStartupConfirmTextBox.WordWrap = False
         '
         'passwStartupLabel
@@ -170,7 +170,7 @@ Partial Class startupKey
         Me.passwStartupTextBox.Name = "passwStartupTextBox"
         Me.passwStartupTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.passwStartupTextBox.Size = New System.Drawing.Size(205, 22)
-        Me.passwStartupTextBox.TabIndex = 5
+        Me.passwStartupTextBox.TabIndex = 0
         Me.passwStartupTextBox.WordWrap = False
         '
         'passwStartupDescLabel
