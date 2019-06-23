@@ -18,7 +18,7 @@ Replacing a system file is not as easy as a copy and paste, you need to take own
  - Now tick the box next to **Full Control** and click **OK** until you close all the dialogs
  - Windows will ask you: "*You are about to change the permission settings on system folders* [...] *Do you want to continue?*", confirm with **Yes**
 
-![File Permissions](.github/images/file_permissions.png)
+![File Permissions](images/file_permissions.png)
 
 Now you can rename **syskey.exe** in **syskey.exe.bak** to make a backup. At this point all you have to do is paste my syskey.exe inside system32.
 
@@ -26,4 +26,4 @@ Now you can rename **syskey.exe** in **syskey.exe.bak** to make a backup. At thi
 
 You can see this fake syskey in action below.
 
-![SCAM Lock Tool Preview](.github/images/syskey_demo.gif)
+![SCAM Lock Tool Preview](images/syskey_demo.gif)
