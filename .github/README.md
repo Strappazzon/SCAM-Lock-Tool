@@ -1,6 +1,6 @@
 # SCAM Lock Tool
 
-![SCAM Lock Tool](.github/images/syskey.png)
+![SCAM Lock Tool](images/syskey.png)
 
 This is a fake SAM Lock Tool (also known as syskey). Scammers use it to lock their victims out of their computer, encrypting the credentials stored inside the SAM file with a password. This version is virtually identical to the original syskey, the only difference is that scammers won't be able to encrypt SAM.
 
