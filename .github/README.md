@@ -23,6 +23,16 @@ Replacing a system file is not as easy as a copy and paste, you need to take own
 
 Now you can rename **syskey.exe** in **syskey.exe.bak** to make a backup. At this point all you have to do is paste my syskey.exe inside system32.
 
+## Command line arguments
+
+SCAM Lock Tools accepts the following command line arguments to customize its behaviour
+
+| Argument | Description |
+|----------|-------------|
+| `--no-wikipedia` | The program will return a normal error without opening the Technical Support Scam [Wikipedia page](https://en.wikipedia.org/wiki/Technical_support_scam). |
+| `--no-error` | The program will not return an error and will not open the Technical Support Scam [Wikipedia page](https://en.wikipedia.org/wiki/Technical_support_scam). |
+| `--success` | The program will not return an error and will not open the Technical Support Scam [Wikipedia page](https://en.wikipedia.org/wiki/Technical_support_scam). |
+
 ## Preview
 
 You can see this fake syskey in action below.
