@@ -2,7 +2,7 @@
 
 ![SCAM Lock Tool](./images/syskey.png)
 
-A replacement for SAM Lock Tool (better known as syskey). Tech support scammers use syskey to lock their victims out of their computer by encrypting the account credentials stored inside the SAM file. With SCAM Lock Tool they won't be able to encrypt SAM.
+Replacement for SAM Lock Tool (better known as syskey), which is used to encrypt the account credentials stored inside the SAM file. Tech support scammers use syskey to lock their victims out of their computer, but with SCAM Lock Tool they won't be able to do it.
 
 ## How to replace syskey
 
