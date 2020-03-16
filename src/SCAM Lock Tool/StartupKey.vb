@@ -48,7 +48,7 @@
                     Select Case Parser.GetBehavior()
                         Case 1
                             '1 = Error, open Wikipedia.
-                            MessageBox.Show("An error occurred while attempting to scam this user.", "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                            MessageBox.Show(Parser.GetCustomMessage(), "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                             Process.Start("https://en.wikipedia.org/wiki/Technical_support_scam")
                             Application.Exit()
                         Case 2
