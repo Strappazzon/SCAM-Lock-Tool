@@ -1,13 +1,13 @@
 ﻿Public Class Form1
-    Private Sub okBtn_Click(sender As Object, e As EventArgs) Handles okBtn.Click
+    Private Sub OkBtn_Click(sender As Object, e As EventArgs) Handles OkBtn.Click
         Application.Exit()
     End Sub
 
-    Private Sub cancelBtn_Click(sender As Object, e As EventArgs) Handles cancelBtn.Click
+    Private Sub CancelBtn_Click(sender As Object, e As EventArgs) Handles CancelBtn.Click
         Application.Exit()
     End Sub
 
-    Private Sub updateBtn_Click(sender As Object, e As EventArgs) Handles updateBtn.Click
-        startupKey.ShowDialog()
+    Private Sub UpdateBtn_Click(sender As Object, e As EventArgs) Handles UpdateBtn.Click
+        StartupKey.ShowDialog()
     End Sub
 End Class

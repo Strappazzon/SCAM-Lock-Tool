@@ -23,108 +23,108 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.descriptionLabel = New System.Windows.Forms.Label()
-        Me.disabledEncryption = New System.Windows.Forms.RadioButton()
-        Me.enabledEncryption = New System.Windows.Forms.RadioButton()
-        Me.okBtn = New System.Windows.Forms.Button()
-        Me.updateBtn = New System.Windows.Forms.Button()
-        Me.cancelBtn = New System.Windows.Forms.Button()
-        Me.syskeyMainIcon = New System.Windows.Forms.PictureBox()
-        CType(Me.syskeyMainIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DescriptionLabel = New System.Windows.Forms.Label()
+        Me.DisabledEncryptionRadioBtn = New System.Windows.Forms.RadioButton()
+        Me.EnabledEncryptionRadioBtn = New System.Windows.Forms.RadioButton()
+        Me.OkBtn = New System.Windows.Forms.Button()
+        Me.UpdateBtn = New System.Windows.Forms.Button()
+        Me.CancelBtn = New System.Windows.Forms.Button()
+        Me.SyskeyIcon = New System.Windows.Forms.PictureBox()
+        CType(Me.SyskeyIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'descriptionLabel
+        'DescriptionLabel
         '
-        Me.descriptionLabel.AutoSize = True
-        Me.descriptionLabel.Font = New System.Drawing.Font("Segoe UI", 8.0!)
-        Me.descriptionLabel.Location = New System.Drawing.Point(85, 15)
-        Me.descriptionLabel.Name = "descriptionLabel"
-        Me.descriptionLabel.Size = New System.Drawing.Size(263, 91)
-        Me.descriptionLabel.TabIndex = 1
-        Me.descriptionLabel.Text = "This tool will allow you to configure the Accounts" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Database to enable additional" &
+        Me.DescriptionLabel.AutoSize = True
+        Me.DescriptionLabel.Font = New System.Drawing.Font("Segoe UI", 8.0!)
+        Me.DescriptionLabel.Location = New System.Drawing.Point(85, 15)
+        Me.DescriptionLabel.Name = "DescriptionLabel"
+        Me.DescriptionLabel.Size = New System.Drawing.Size(263, 91)
+        Me.DescriptionLabel.TabIndex = 1
+        Me.DescriptionLabel.Text = "This tool will allow you to configure the Accounts" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Database to enable additional" &
     " encryption, further" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "protecting the database from compromise." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Once enabled" &
     ", this encryption cannot be" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "disabled."
         '
-        'disabledEncryption
+        'DisabledEncryptionRadioBtn
         '
-        Me.disabledEncryption.AutoSize = True
-        Me.disabledEncryption.Enabled = False
-        Me.disabledEncryption.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.disabledEncryption.Font = New System.Drawing.Font("Segoe UI", 8.0!)
-        Me.disabledEncryption.Location = New System.Drawing.Point(88, 118)
-        Me.disabledEncryption.Name = "disabledEncryption"
-        Me.disabledEncryption.Size = New System.Drawing.Size(127, 17)
-        Me.disabledEncryption.TabIndex = 1
-        Me.disabledEncryption.TabStop = True
-        Me.disabledEncryption.Text = "Encryption Disabled"
-        Me.disabledEncryption.UseVisualStyleBackColor = True
+        Me.DisabledEncryptionRadioBtn.AutoSize = True
+        Me.DisabledEncryptionRadioBtn.Enabled = False
+        Me.DisabledEncryptionRadioBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DisabledEncryptionRadioBtn.Font = New System.Drawing.Font("Segoe UI", 8.0!)
+        Me.DisabledEncryptionRadioBtn.Location = New System.Drawing.Point(88, 118)
+        Me.DisabledEncryptionRadioBtn.Name = "DisabledEncryptionRadioBtn"
+        Me.DisabledEncryptionRadioBtn.Size = New System.Drawing.Size(127, 17)
+        Me.DisabledEncryptionRadioBtn.TabIndex = 1
+        Me.DisabledEncryptionRadioBtn.TabStop = True
+        Me.DisabledEncryptionRadioBtn.Text = "Encryption Disabled"
+        Me.DisabledEncryptionRadioBtn.UseVisualStyleBackColor = True
         '
-        'enabledEncryption
+        'EnabledEncryptionRadioBtn
         '
-        Me.enabledEncryption.AutoSize = True
-        Me.enabledEncryption.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.enabledEncryption.Font = New System.Drawing.Font("Segoe UI", 8.0!)
-        Me.enabledEncryption.Location = New System.Drawing.Point(88, 141)
-        Me.enabledEncryption.Name = "enabledEncryption"
-        Me.enabledEncryption.Size = New System.Drawing.Size(124, 17)
-        Me.enabledEncryption.TabIndex = 2
-        Me.enabledEncryption.TabStop = True
-        Me.enabledEncryption.Text = "Encryption Enabled"
-        Me.enabledEncryption.UseVisualStyleBackColor = True
+        Me.EnabledEncryptionRadioBtn.AutoSize = True
+        Me.EnabledEncryptionRadioBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.EnabledEncryptionRadioBtn.Font = New System.Drawing.Font("Segoe UI", 8.0!)
+        Me.EnabledEncryptionRadioBtn.Location = New System.Drawing.Point(88, 141)
+        Me.EnabledEncryptionRadioBtn.Name = "EnabledEncryptionRadioBtn"
+        Me.EnabledEncryptionRadioBtn.Size = New System.Drawing.Size(124, 17)
+        Me.EnabledEncryptionRadioBtn.TabIndex = 2
+        Me.EnabledEncryptionRadioBtn.TabStop = True
+        Me.EnabledEncryptionRadioBtn.Text = "Encryption Enabled"
+        Me.EnabledEncryptionRadioBtn.UseVisualStyleBackColor = True
         '
-        'okBtn
+        'OkBtn
         '
-        Me.okBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.okBtn.Location = New System.Drawing.Point(70, 170)
-        Me.okBtn.Name = "okBtn"
-        Me.okBtn.Size = New System.Drawing.Size(70, 24)
-        Me.okBtn.TabIndex = 3
-        Me.okBtn.Text = "OK"
-        Me.okBtn.UseVisualStyleBackColor = True
+        Me.OkBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.OkBtn.Location = New System.Drawing.Point(70, 170)
+        Me.OkBtn.Name = "OkBtn"
+        Me.OkBtn.Size = New System.Drawing.Size(70, 24)
+        Me.OkBtn.TabIndex = 3
+        Me.OkBtn.Text = "OK"
+        Me.OkBtn.UseVisualStyleBackColor = True
         '
-        'updateBtn
+        'UpdateBtn
         '
-        Me.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.updateBtn.Location = New System.Drawing.Point(222, 170)
-        Me.updateBtn.Name = "updateBtn"
-        Me.updateBtn.Size = New System.Drawing.Size(70, 24)
-        Me.updateBtn.TabIndex = 5
-        Me.updateBtn.Text = "Update"
-        Me.updateBtn.UseVisualStyleBackColor = True
+        Me.UpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.UpdateBtn.Location = New System.Drawing.Point(222, 170)
+        Me.UpdateBtn.Name = "UpdateBtn"
+        Me.UpdateBtn.Size = New System.Drawing.Size(70, 24)
+        Me.UpdateBtn.TabIndex = 5
+        Me.UpdateBtn.Text = "Update"
+        Me.UpdateBtn.UseVisualStyleBackColor = True
         '
-        'cancelBtn
+        'CancelBtn
         '
-        Me.cancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cancelBtn.Location = New System.Drawing.Point(146, 170)
-        Me.cancelBtn.Name = "cancelBtn"
-        Me.cancelBtn.Size = New System.Drawing.Size(70, 24)
-        Me.cancelBtn.TabIndex = 4
-        Me.cancelBtn.Text = "Cancel"
-        Me.cancelBtn.UseVisualStyleBackColor = True
+        Me.CancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.CancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CancelBtn.Location = New System.Drawing.Point(146, 170)
+        Me.CancelBtn.Name = "CancelBtn"
+        Me.CancelBtn.Size = New System.Drawing.Size(70, 24)
+        Me.CancelBtn.TabIndex = 4
+        Me.CancelBtn.Text = "Cancel"
+        Me.CancelBtn.UseVisualStyleBackColor = True
         '
-        'syskeyMainIcon
+        'SyskeyIcon
         '
-        Me.syskeyMainIcon.Image = Global.syskey.My.Resources.Resources.syskey
-        Me.syskeyMainIcon.Location = New System.Drawing.Point(15, 15)
-        Me.syskeyMainIcon.Name = "syskeyMainIcon"
-        Me.syskeyMainIcon.Size = New System.Drawing.Size(64, 64)
-        Me.syskeyMainIcon.TabIndex = 0
-        Me.syskeyMainIcon.TabStop = False
+        Me.SyskeyIcon.Image = Global.syskey.My.Resources.Resources.syskey
+        Me.SyskeyIcon.Location = New System.Drawing.Point(15, 15)
+        Me.SyskeyIcon.Name = "SyskeyIcon"
+        Me.SyskeyIcon.Size = New System.Drawing.Size(64, 64)
+        Me.SyskeyIcon.TabIndex = 0
+        Me.SyskeyIcon.TabStop = False
         '
         'Form1
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.CancelButton = Me.cancelBtn
+        Me.CancelButton = Me.CancelBtn
         Me.ClientSize = New System.Drawing.Size(367, 206)
-        Me.Controls.Add(Me.cancelBtn)
-        Me.Controls.Add(Me.updateBtn)
-        Me.Controls.Add(Me.okBtn)
-        Me.Controls.Add(Me.enabledEncryption)
-        Me.Controls.Add(Me.disabledEncryption)
-        Me.Controls.Add(Me.descriptionLabel)
-        Me.Controls.Add(Me.syskeyMainIcon)
+        Me.Controls.Add(Me.CancelBtn)
+        Me.Controls.Add(Me.UpdateBtn)
+        Me.Controls.Add(Me.OkBtn)
+        Me.Controls.Add(Me.EnabledEncryptionRadioBtn)
+        Me.Controls.Add(Me.DisabledEncryptionRadioBtn)
+        Me.Controls.Add(Me.DescriptionLabel)
+        Me.Controls.Add(Me.SyskeyIcon)
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -134,17 +134,17 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.ShowIcon = False
         Me.Text = "Securing Windows Account Database"
-        CType(Me.syskeyMainIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SyskeyIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents syskeyMainIcon As PictureBox
-    Friend WithEvents descriptionLabel As Label
-    Friend WithEvents disabledEncryption As RadioButton
-    Friend WithEvents enabledEncryption As RadioButton
-    Friend WithEvents okBtn As Button
-    Friend WithEvents updateBtn As Button
-    Friend WithEvents cancelBtn As Button
+    Friend WithEvents SyskeyIcon As PictureBox
+    Friend WithEvents DescriptionLabel As Label
+    Friend WithEvents DisabledEncryptionRadioBtn As RadioButton
+    Friend WithEvents EnabledEncryptionRadioBtn As RadioButton
+    Friend WithEvents OkBtn As Button
+    Friend WithEvents UpdateBtn As Button
+    Friend WithEvents CancelBtn As Button
 End Class

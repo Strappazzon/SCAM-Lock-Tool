@@ -1,49 +1,49 @@
-﻿Public Class startupKey
-    Private Sub startupKey_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+﻿Public Class StartupKey
+    Private Sub StartupKey_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         'Clear typed password(s) when closing this form
-        passwStartupTextBox.Clear()
-        passwStartupConfirmTextBox.Clear()
+        PasswordStartupTxtBox.Clear()
+        PasswordStartupConfirmTxtBox.Clear()
     End Sub
 
-    Private Sub passwStartupRadio_CheckedChanged(sender As Object, e As EventArgs) Handles passwStartupRadio.CheckedChanged
-        If passwStartupRadio.Checked = True Then
-            passwStartupTextBox.Enabled = True
-            passwStartupConfirmTextBox.Enabled = True
+    Private Sub PasswordStartupRadioBtn_CheckedChanged(sender As Object, e As EventArgs) Handles PasswordStartupRadioBtn.CheckedChanged
+        If PasswordStartupRadioBtn.Checked = True Then
+            PasswordStartupTxtBox.Enabled = True
+            PasswordStartupConfirmTxtBox.Enabled = True
 
-            sysPasswStartupRadio.Checked = False
-            sysPasswStartupFloppyRadio.Checked = False
-            sysPasswStartupSystemRadio.Checked = False
-            sysPasswStartupFloppyRadio.Enabled = False
-            sysPasswStartupSystemRadio.Enabled = False
+            SystemPasswordStartupRadioBtn.Checked = False
+            SystemPasswordStartupFloppyRadioBtn.Checked = False
+            SystemPasswordStartupSystemRadioBtn.Checked = False
+            SystemPasswordStartupFloppyRadioBtn.Enabled = False
+            SystemPasswordStartupSystemRadioBtn.Enabled = False
         End If
     End Sub
 
-    Private Sub sysPasswStartupRadio_CheckedChanged(sender As Object, e As EventArgs) Handles sysPasswStartupRadio.CheckedChanged
-        If sysPasswStartupRadio.Checked = True Then
-            passwStartupRadio.Checked = False
-            passwStartupTextBox.Enabled = False
-            passwStartupConfirmTextBox.Enabled = False
+    Private Sub SystemPasswordStartupRadioBtn_CheckedChanged(sender As Object, e As EventArgs) Handles SystemPasswordStartupRadioBtn.CheckedChanged
+        If SystemPasswordStartupRadioBtn.Checked = True Then
+            PasswordStartupRadioBtn.Checked = False
+            PasswordStartupTxtBox.Enabled = False
+            PasswordStartupConfirmTxtBox.Enabled = False
 
-            sysPasswStartupRadio.Checked = True
-            sysPasswStartupFloppyRadio.Enabled = True
-            sysPasswStartupSystemRadio.Enabled = True
-            sysPasswStartupFloppyRadio.Checked = False
-            sysPasswStartupSystemRadio.Checked = True
+            SystemPasswordStartupRadioBtn.Checked = True
+            SystemPasswordStartupFloppyRadioBtn.Enabled = True
+            SystemPasswordStartupSystemRadioBtn.Enabled = True
+            SystemPasswordStartupFloppyRadioBtn.Checked = False
+            SystemPasswordStartupSystemRadioBtn.Checked = True
         End If
     End Sub
 
-    Private Sub cancelStartupBtn_Click(sender As Object, e As EventArgs) Handles cancelStartupBtn.Click
+    Private Sub CancelBtn_Click(sender As Object, e As EventArgs) Handles CancelBtn.Click
         Close()
     End Sub
 
-    Private Sub okStartupBtn_Click(sender As Object, e As EventArgs) Handles okStartupBtn.Click
-        If sysPasswStartupSystemRadio.Checked = True Then
+    Private Sub OkBtn_Click(sender As Object, e As EventArgs) Handles OkBtn.Click
+        If SystemPasswordStartupSystemRadioBtn.Checked = True Then
             Close()
-        ElseIf sysPasswStartupFloppyRadio.Checked = True Then
+        ElseIf SystemPasswordStartupFloppyRadioBtn.Checked = True Then
             MessageBox.Show("Insert a disk into drive A: that will be used to save the Startup Key.", "Save Startup Key", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
         Else
-            If passwStartupTextBox.Text <> "" AndAlso passwStartupConfirmTextBox.Text <> "" Then
-                If passwStartupTextBox.Text = passwStartupConfirmTextBox.Text Then
+            If PasswordStartupTxtBox.Text <> "" AndAlso PasswordStartupConfirmTxtBox.Text <> "" Then
+                If PasswordStartupTxtBox.Text = PasswordStartupConfirmTxtBox.Text Then
                     'Check SCAM Lock Tool behavior settings
                     Select Case Parser.GetBehavior()
                         Case 1
