@@ -1,16 +1,6 @@
 ﻿Public Class startupKey
     Public cmdArgs = Environment.GetCommandLineArgs()
 
-    Private Sub startupKey_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Form1.Enabled = False
-        passwStartupTextBox.Select()
-    End Sub
-
-    Private Sub startupKey_Closing(ByVal sender As Object, ByVal e As FormClosingEventArgs) Handles Me.FormClosing
-        Form1.Enabled = True
-        Form1.Show()
-    End Sub
-
     Private Sub passwStartupRadio_CheckedChanged(sender As Object, e As EventArgs) Handles passwStartupRadio.CheckedChanged
         If passwStartupRadio.Checked = True Then
             passwStartupTextBox.Enabled = True
@@ -40,8 +30,6 @@
 
     Private Sub cancelStartupBtn_Click(sender As Object, e As EventArgs) Handles cancelStartupBtn.Click
         Close()
-        Form1.Enabled = True
-        Form1.Show()
     End Sub
 
     Private Sub okStartupBtn_Click(sender As Object, e As EventArgs) Handles okStartupBtn.Click

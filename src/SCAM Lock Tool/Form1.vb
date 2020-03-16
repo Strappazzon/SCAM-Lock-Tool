@@ -8,6 +8,6 @@
     End Sub
 
     Private Sub updateBtn_Click(sender As Object, e As EventArgs) Handles updateBtn.Click
-        startupKey.Show()
+        startupKey.ShowDialog()
     End Sub
 End Class
