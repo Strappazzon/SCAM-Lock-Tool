@@ -66,7 +66,6 @@ Partial Class startupKey
         Me.sysPasswStartupBox.Controls.Add(Me.sysPasswStartupSystemRadio)
         Me.sysPasswStartupBox.Controls.Add(Me.sysPasswStartupFloppyRadio)
         Me.sysPasswStartupBox.Controls.Add(Me.sysPasswStartupRadio)
-        Me.sysPasswStartupBox.Enabled = False
         Me.sysPasswStartupBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.sysPasswStartupBox.Location = New System.Drawing.Point(12, 161)
         Me.sysPasswStartupBox.Name = "sysPasswStartupBox"
@@ -79,7 +78,6 @@ Partial Class startupKey
         Me.sysPasswStartupSystemRadio.AutoSize = True
         Me.sysPasswStartupSystemRadio.CheckAlign = System.Drawing.ContentAlignment.TopLeft
         Me.sysPasswStartupSystemRadio.Checked = True
-        Me.sysPasswStartupSystemRadio.Enabled = False
         Me.sysPasswStartupSystemRadio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.sysPasswStartupSystemRadio.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.sysPasswStartupSystemRadio.Location = New System.Drawing.Point(25, 72)
@@ -95,7 +93,6 @@ Partial Class startupKey
         '
         Me.sysPasswStartupFloppyRadio.AutoSize = True
         Me.sysPasswStartupFloppyRadio.CheckAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.sysPasswStartupFloppyRadio.Enabled = False
         Me.sysPasswStartupFloppyRadio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.sysPasswStartupFloppyRadio.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.sysPasswStartupFloppyRadio.Location = New System.Drawing.Point(25, 23)
@@ -109,7 +106,6 @@ Partial Class startupKey
         'sysPasswStartupRadio
         '
         Me.sysPasswStartupRadio.AutoSize = True
-        Me.sysPasswStartupRadio.Enabled = False
         Me.sysPasswStartupRadio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.sysPasswStartupRadio.Location = New System.Drawing.Point(6, 0)
         Me.sysPasswStartupRadio.Name = "sysPasswStartupRadio"
@@ -145,6 +141,7 @@ Partial Class startupKey
         'passwStartupConfirmTextBox
         '
         Me.passwStartupConfirmTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.passwStartupConfirmTextBox.Enabled = False
         Me.passwStartupConfirmTextBox.Location = New System.Drawing.Point(87, 90)
         Me.passwStartupConfirmTextBox.MaxLength = 24
         Me.passwStartupConfirmTextBox.Name = "passwStartupConfirmTextBox"
@@ -165,6 +162,7 @@ Partial Class startupKey
         'passwStartupTextBox
         '
         Me.passwStartupTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.passwStartupTextBox.Enabled = False
         Me.passwStartupTextBox.Location = New System.Drawing.Point(87, 62)
         Me.passwStartupTextBox.MaxLength = 24
         Me.passwStartupTextBox.Name = "passwStartupTextBox"
@@ -185,13 +183,11 @@ Partial Class startupKey
         'passwStartupRadio
         '
         Me.passwStartupRadio.AutoSize = True
-        Me.passwStartupRadio.Checked = True
         Me.passwStartupRadio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.passwStartupRadio.Location = New System.Drawing.Point(6, 0)
         Me.passwStartupRadio.Name = "passwStartupRadio"
         Me.passwStartupRadio.Size = New System.Drawing.Size(114, 17)
         Me.passwStartupRadio.TabIndex = 4
-        Me.passwStartupRadio.TabStop = True
         Me.passwStartupRadio.Text = "Password Startup"
         Me.passwStartupRadio.UseVisualStyleBackColor = True
         '

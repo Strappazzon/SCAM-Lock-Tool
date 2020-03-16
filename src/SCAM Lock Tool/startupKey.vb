@@ -11,6 +11,33 @@
         Form1.Show()
     End Sub
 
+    Private Sub passwStartupRadio_CheckedChanged(sender As Object, e As EventArgs) Handles passwStartupRadio.CheckedChanged
+        If passwStartupRadio.Checked = True Then
+            passwStartupTextBox.Enabled = True
+            passwStartupConfirmTextBox.Enabled = True
+
+            sysPasswStartupRadio.Checked = False
+            sysPasswStartupFloppyRadio.Checked = False
+            sysPasswStartupSystemRadio.Checked = False
+            sysPasswStartupFloppyRadio.Enabled = False
+            sysPasswStartupSystemRadio.Enabled = False
+        End If
+    End Sub
+
+    Private Sub sysPasswStartupRadio_CheckedChanged(sender As Object, e As EventArgs) Handles sysPasswStartupRadio.CheckedChanged
+        If sysPasswStartupRadio.Checked = True Then
+            passwStartupRadio.Checked = False
+            passwStartupTextBox.Enabled = False
+            passwStartupConfirmTextBox.Enabled = False
+
+            sysPasswStartupRadio.Checked = True
+            sysPasswStartupFloppyRadio.Enabled = True
+            sysPasswStartupSystemRadio.Enabled = True
+            sysPasswStartupFloppyRadio.Checked = False
+            sysPasswStartupSystemRadio.Checked = True
+        End If
+    End Sub
+
     Private Sub cancelStartupBtn_Click(sender As Object, e As EventArgs) Handles cancelStartupBtn.Click
         Close()
         Form1.Enabled = True
