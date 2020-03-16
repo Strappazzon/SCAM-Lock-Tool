@@ -23,5 +23,10 @@
 [Rr]es
 [Rr]esources
 *.ico
-
 !syskey.ico
+
+# NuGet Packages
+# //docs.microsoft.com/en-us/nuget/consume-packages/packages-and-source-control
+[Pp]ackages
+[Pp]ackages/*
+![Pp]ackages/build/
