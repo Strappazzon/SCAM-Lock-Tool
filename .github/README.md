@@ -1,41 +1,86 @@
-# SCAM Lock Tool
+<h1 align="center">
+  <br>
+  <img src="./images/syskey.png" alt="SCAM Lock Tool Screenshot"></a>
+  <br>
+  SCAM Lock Tool
+  <br>
+</h1>
 
-![SCAM Lock Tool](./images/syskey.png)
+<h4 align="center">A fake syskey. Scammers won't be able to encrypt account credentials.</h4>
 
-Replacement for SAM Lock Tool (better known as syskey), which is used to encrypt the account credentials stored inside the SAM file. Tech support scammers use syskey to lock their victims out of their computer, but with SCAM Lock Tool they won't be able to do it.
+<p align="center">
+  <a href="#about">About</a> •
+  <a href="#how-to-replace-syskey">How to Replace syskey</a> •
+  <a href="#settings">Settings</a> •
+  <a href="#preview">Preview</a> •
+  <a href="#download">Download</a>
+</p>
+
+## About
+
+**SCAM Lock Tool** is a replacement for SAM Lock Tool (better known as syskey), which is used to encrypt the account credentials stored inside the SAM file. Tech support scammers use syskey to lock their victims out of their computer, but with SCAM Lock Tool they won't be able to do it.
 
 ## How to replace syskey
 
-<img align="right" src="./images/file_permissions.png" alt="syskey permissions"></img>
+Refer to the [Wiki page](https://github.com/Strappazzon/SCAM-Lock-Tool/wiki/How-to-replace-syskey).
 
-Replacing a system file is not as easy as a copy and paste, you need to take ownership over the file. To do so:
+## Settings
 
-- Go to `C:\Windows\System32` and right click on `syskey.exe`
-- Click **Properties**, open the **Security** tab, click the **Advanced** button, then open the **Owner** tab
-  - As you can see the owner of the file is **TrustedInstaller** and not your current account
-- Click the **Edit** button (in Windows 10, it’s **Change**) and select the *Administrators* group
-- Click the **OK** button
-  - The current owner is now the **Administrators** group (which includes your account assuming you are an administrator)
-- Click **OK** until you have closed all properties windows and are back to the Explorer screen
-- Right-click on **syskey.exe** and click **Properties > Security tab > Advanced button** again
-- Click the **Change permissions...** button, select **Administrators** from the list and then click the **Edit...** button
-- Tick the box next to **Full Control** and click **OK** until you close all the dialogs
-  - Windows will ask you: "*You are about to change the permission settings on system folders* [...] *Do you want to continue?*", confirm with **Yes**
+SCAM Lock Tool behavior can be configured by using a `syskey.ini` file. For example, you can decide to display an error or open the [Tech Support Scam Wikipedia page](https://www.wikipedia.org/wiki/Tech_support_scam) when attempting to change the Startup Key.
 
-Now you can rename **syskey.exe** in **syskey.exe.bak** to make a backup. At this point all you have to do is paste my syskey.exe inside system32.
+The settings file is optional.
 
-## Command line arguments
+The `syskey.ini` file **must** be placed alongside `syskey.exe`.
 
-SCAM Lock Tools accepts the following command line arguments to customize its behaviour
+### Elements of syskey.ini
 
-| Argument | Description |
-|----------|-------------|
-| --no-wikipedia | The program will return a normal error without opening the Technical Support Scam [Wikipedia page](https://en.wikipedia.org/wiki/Technical_support_scam). |
-| --no-error | The program will not return an error and will not open the Technical Support Scam [Wikipedia page](https://en.wikipedia.org/wiki/Technical_support_scam). |
-| --success | The program will not return an error and will not open the Technical Support Scam [Wikipedia page](https://en.wikipedia.org/wiki/Technical_support_scam). |
+#### [syskey]
+
+The `syskey` section can include the following properties:
+
+<table>
+  <tr>
+    <th align="left">Property</th>
+    <th align="left">Type</th>
+    <th align="left">Default</th>
+    <th align="left">Description</th>
+  </tr>
+  <tr>
+    <td><code>behavior</code></td>
+    <td>Integer</td>
+    <td>0</td>
+    <td>
+      If set to <code>0</code>, it will show an error when attempting to change the Startup Key.
+      <br>
+      If set to <code>1</code>, it will show an error message and will open the <a href="https://www.wikipedia.org/wiki/Tech_support_scam">Tech Support Scam Wikipedia page</a> when attempting to change the Startup Key..
+      <br>
+      If set to <code>2</code>, it will show a message saying that the Startup Key was changed successfully.
+    </td>
+  </tr>
+  <tr>
+    <td><code>message</code></td>
+    <td>String</td>
+    <td>An error occurred while attempting to scam this user.</td>
+    <td>
+      If <code>behavior</code> is set to <code>1</code> shows a custom error message.
+      <br>
+      <b>The property cannot be surrounded by quotation marks</b> otherwise they will appear in the message.
+    </td>
+  </tr>
+</table>
+
+### Example syskey.ini file
+
+```ini
+[syskey]
+behavior=1
+message=Your custom error message.
+```
 
 ## Preview
 
-You can see this fake syskey in action below.
-
 ![SCAM Lock Tool Preview](./images/syskey_demo.gif)
+
+## Download
+
+You can [download](https://github.com/Strappazzon/SCAM-Lock-Tool/releases/latest) the latest version of SCAM Lock Tool from the Releases page.
