@@ -62,7 +62,7 @@ The `syskey` section can include the following properties:
     <td>String</td>
     <td>An error occurred while attempting to scam this user.</td>
     <td>
-      If <code>behavior</code> is set to <code>1</code> shows a custom error message.
+      If <code>behavior</code> is set to <code>1</code> shows a custom error message. Include <code>$PASSWORD</code> to display the typed password in the error message.
       <br>
       <b>Don't surround the custom message with quotation marks</b> otherwise they will appear in the error message.
     </td>
