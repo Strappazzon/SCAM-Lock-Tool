@@ -25,7 +25,7 @@ Public Class Parser
 
             'Return parsed custom message
             If Message <> Nothing Then
-                Return Message
+                Return Message.Replace("$PASSWORD", StartupKey.PasswordStartupTxtBox.Text)
             Else
                 Return "An error occurred while attempting to scam this user."
             End If
