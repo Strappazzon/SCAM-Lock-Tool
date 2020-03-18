@@ -64,7 +64,7 @@ The `syskey` section can include the following properties:
     <td>
       If <code>behavior</code> is set to <code>1</code> shows a custom error message.
       <br>
-      <b>The property cannot be surrounded by quotation marks</b> otherwise they will appear in the message.
+      <b>Don't surround the custom message with quotation marks</b> otherwise they will appear in the error message.
     </td>
   </tr>
 </table>
