@@ -90,7 +90,11 @@ message=Your custom error message.
 
 ## Preview
 
-![SCAM Lock Tool Preview](./images/syskey_demo.gif)
+| Error | Error + Wikipedia page |
+|-------|------------------------|
+| ![SCAM Lock Tool Preview](./images/syskey_demo.gif?raw=true) | ![SCAM Lock Tool Preview](./images/syskey_demo_wikipedia.gif?raw=true) |
+
+<p align="center"><i>Click on a preview to enlarge it</i></p>
 
 ## Download
 
