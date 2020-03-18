@@ -22,7 +22,18 @@
 
 ## How to replace syskey
 
-Refer to the [Wiki page](https://github.com/Strappazzon/SCAM-Lock-Tool/wiki/How-to-replace-syskey).
+* Open an elevated Command Prompt and run the following commands:
+
+```batch
+takeown /F syskey.exe
+icacls syskey.exe /T /C /GRANT Everyone:F
+```
+
+![Command Prompt](./images/syskey_takeown.png)
+
+* Rename the original **syskey.exe** or move it somewhere else to make a backup.
+* Copy **my version of syskey.exe** inside `C:\Windows\System32`, **including** `INIFileParser.dll`.
+* If you want to customize SCAM Lock Tool behavior copy `syskey.ini` as well or create it. See the [Settings](#settings) section for more information.
 
 ## Settings
 
